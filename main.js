@@ -58,3 +58,14 @@ class Blockchain{
     }
 }
 
+let Quinn = new Blockchain();
+
+Quinn.addBlock(new Block(1,"30/10/22", {amount:4}));
+Quinn.addBlock(new Block(2,"31/10/22", {amount:10}));
+
+console.log('Is blockchain valid ? ' + Quinn.isChainValid());
+
+//Quinn.chain[1].data = {amount:100}
+//Quinn.chain[1].hash = Quinn.chain[1].calculateHash
+
+//console.log(JSON.stringify(Quinn,null, 4));
